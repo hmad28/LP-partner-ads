@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/offer/:partner", "destination": "/index.html" }
+  ]
+}
