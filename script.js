@@ -63,7 +63,7 @@ function applyDynamicOffer() {
   document.getElementById("offerLabel").textContent = selectedService.offer;
   document.getElementById("offerPrice").textContent = selectedService.fullPrice;
   document.getElementById("offerFeatures").innerHTML = selectedService.features.map((feature) => `<li><span>✓</span>${feature}</li>`).join("");
-  document.querySelector("[data-message-key='selected']").childNodes[0].textContent = `Konsultasikan ${selectedService.offer} `;
+  document.querySelector("[data-message-key='selected']").childNodes[0].textContent = "Konsultasi Paket Ini ";
   document.querySelector(".offer-content small").textContent = serviceKey === "website" ? "*Domain standar dan mengikuti ketersediaan." : "*Detail fitur mengikuti scope yang disepakati.";
   document.querySelector(".offer-card").dataset.watermark = selectedService.price.replace("Rp", "").replace("jt", "");
   document.title = `${selectedService.offer} Mulai ${selectedService.price} — Hammad Studio`;
